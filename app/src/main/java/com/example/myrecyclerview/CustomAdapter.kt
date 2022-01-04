@@ -28,6 +28,7 @@ class CustomAdapter(val userList: ArrayList<User>) : RecyclerView.Adapter<Custom
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bindItems(user: User) {
+            //hello view holder
             val textViewName = itemView.findViewById(R.id.textViewUsername) as TextView
             val textViewAddress  = itemView.findViewById(R.id.textViewAddress) as TextView
             textViewName.text = user.name
